@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Scrabble</h1>
+            <form action="" method="post" class="btn btn-info">
+                <label for="word">Enter a word:</label>
+                <input type="text" name="word" value="">
+                <button type="submit" class="btn" name="button">Calculate</button>
+            </form>
+            {%if score is not empty%}
+                <h3>Your word is worth {{score}} points</h3>
+            {%endif%}
+        </div>
+    </body>
+</html>
